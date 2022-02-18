@@ -1,0 +1,237 @@
+2022-02-17T19:26:41.1524305Z ##[section]Starting: SonarQubeAnalyze
+2022-02-17T19:26:41.1555455Z ==============================================================================
+2022-02-17T19:26:41.1557012Z Task         : Run Code Analysis
+2022-02-17T19:26:41.1558080Z Description  : Run scanner and upload the results to the SonarQube server.
+2022-02-17T19:26:41.1559131Z Version      : 5.4.0
+2022-02-17T19:26:41.1559924Z Author       : sonarsource
+2022-02-17T19:26:41.1562871Z Help         : Version: 5.4.0. This task is not needed for Maven and Gradle projects since the scanner should be run as part of the build.
+
+[More Information](http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html)
+2022-02-17T19:26:41.1566027Z ==============================================================================
+2022-02-17T19:26:41.8227297Z [command]/usr/bin/dotnet /home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/_tasks/SonarQubePrepare_15b84ca1-b62f-4a2a-a403-89b77a063157/5.4.0/dotnet-sonar-scanner-msbuild/SonarScanner.MSBuild.dll end
+2022-02-17T19:26:42.2444933Z SonarScanner for MSBuild 5.5.3
+2022-02-17T19:26:42.2446065Z Using the .NET Core version of the Scanner for MSBuild
+2022-02-17T19:26:42.5778318Z Post-processing started.
+2022-02-17T19:26:43.2674706Z Calling the SonarScanner CLI...
+2022-02-17T19:26:44.3346783Z INFO: Scanner configuration file: /home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/_tasks/SonarQubePrepare_15b84ca1-b62f-4a2a-a403-89b77a063157/5.4.0/dotnet-sonar-scanner-msbuild/sonar-scanner-4.6.2.2472/conf/sonar-scanner.properties
+2022-02-17T19:26:44.3486702Z INFO: Project root configuration file: /home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/2/.sonarqube/out/sonar-project.properties
+2022-02-17T19:26:44.4552394Z INFO: SonarScanner 4.6.2.2472
+2022-02-17T19:26:44.4554367Z INFO: Java 1.8.0_232 Oracle Corporation (64-bit)
+2022-02-17T19:26:44.4555581Z INFO: Linux 5.3.11-100.fc29.x86_64 amd64
+2022-02-17T19:26:45.6700224Z INFO: User cache: /home/yugularx/.sonar/cache
+2022-02-17T19:26:47.0577081Z INFO: Scanner configuration file: /home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/_tasks/SonarQubePrepare_15b84ca1-b62f-4a2a-a403-89b77a063157/5.4.0/dotnet-sonar-scanner-msbuild/sonar-scanner-4.6.2.2472/conf/sonar-scanner.properties
+2022-02-17T19:26:47.0603399Z INFO: Project root configuration file: /home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/2/.sonarqube/out/sonar-project.properties
+2022-02-17T19:26:47.0863092Z INFO: Analyzing on SonarQube server 8.9.7
+2022-02-17T19:26:47.0994539Z INFO: Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+2022-02-17T19:26:48.0590507Z WARN: SonarScanner will require Java 11 to run, starting in SonarQube 9.x
+2022-02-17T19:26:48.8221628Z INFO: Load global settings
+2022-02-17T19:26:49.2798334Z INFO: Load global settings (done) | time=459ms
+2022-02-17T19:26:49.2930960Z INFO: Server id: BF41A1F2-AX8C88fsDQFi93a7MV0D
+2022-02-17T19:26:49.3196040Z INFO: User cache: /home/yugularx/.sonar/cache
+2022-02-17T19:26:49.3367475Z INFO: Load/download plugins
+2022-02-17T19:26:49.3371935Z INFO: Load plugins index
+2022-02-17T19:26:49.6469052Z INFO: Load plugins index (done) | time=306ms
+2022-02-17T19:26:54.3413671Z INFO: Load/download plugins (done) | time=5003ms
+2022-02-17T19:26:56.8947354Z INFO: Process project properties
+2022-02-17T19:26:56.9684324Z INFO: Process project properties (done) | time=75ms
+2022-02-17T19:26:56.9718556Z INFO: Execute project builders
+2022-02-17T19:26:57.1705614Z INFO: Execute project builders (done) | time=198ms
+2022-02-17T19:26:57.1845047Z INFO: Project key: hello_world
+2022-02-17T19:26:57.1848199Z INFO: Base dir: /home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/2/s
+2022-02-17T19:26:57.1855319Z INFO: Working dir: /home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/2/.sonarqube/out/.sonar
+2022-02-17T19:26:57.9095250Z INFO: Load project settings for component key: 'hello_world'
+2022-02-17T19:26:58.3812575Z INFO: Auto-configuring with CI 'Azure DevOps'
+2022-02-17T19:26:58.4080312Z INFO: Load quality profiles
+2022-02-17T19:26:58.7603162Z INFO: Load quality profiles (done) | time=355ms
+2022-02-17T19:26:58.7906960Z INFO: Auto-configuring with CI 'Azure DevOps'
+2022-02-17T19:26:58.8132353Z INFO: Load active rules
+2022-02-17T19:27:08.4398869Z INFO: Load active rules (done) | time=9621ms
+2022-02-17T19:27:08.9244783Z INFO: Indexing files...
+2022-02-17T19:27:08.9318473Z INFO: Project configuration:
+2022-02-17T19:27:09.6697910Z INFO: Indexing files of module 'hello_world'
+2022-02-17T19:27:09.6728091Z INFO:   Base dir: /home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/2/s
+2022-02-17T19:27:09.6859686Z INFO:   Source paths: Program.cs, obj/Debug/netstandard2.1/.NETStandard,Version=v2....
+2022-02-17T19:27:09.8125075Z INFO: Load project repositories
+2022-02-17T19:27:09.8398751Z INFO: Load project repositories (done) | time=27ms
+2022-02-17T19:27:10.0701430Z INFO: Indexing files of module 'hello_world'
+2022-02-17T19:27:10.0745134Z INFO:   Base dir: /home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/2/s
+2022-02-17T19:27:10.0808177Z INFO: 29 files indexed
+2022-02-17T19:27:10.0855204Z INFO: 10 files ignored because of scm ignore settings
+2022-02-17T19:27:10.1019845Z INFO: Quality profile for cs: Sonar way
+2022-02-17T19:27:10.1021316Z INFO: Quality profile for css: Sonar way
+2022-02-17T19:27:10.1022131Z INFO: Quality profile for web: Sonar way
+2022-02-17T19:27:10.1024283Z INFO: ------------- Run sensors on module hello_world
+2022-02-17T19:27:10.7141369Z INFO: Load metrics repository
+2022-02-17T19:27:10.8953333Z INFO: Load metrics repository (done) | time=188ms
+2022-02-17T19:27:15.1310005Z INFO: Sensor CSS Metrics [cssfamily]
+2022-02-17T19:27:15.5580119Z INFO: Sensor CSS Metrics [cssfamily] (done) | time=434ms
+2022-02-17T19:27:15.5583600Z INFO: Sensor CSS Rules [cssfamily]
+2022-02-17T19:27:19.3987981Z ##[error]ERROR: CSS rules were not executed. Error when running: 'node -v'. Is Node.js available during analysis?
+2022-02-17T19:27:19.4000956Z ERROR: CSS rules were not executed. Error when running: 'node -v'. Is Node.js available during analysis?
+2022-02-17T19:27:19.4030220Z ##[error]org.sonarsource.nodejs.NodeCommandException: Error when running: 'node -v'. Is Node.js available during analysis?
+2022-02-17T19:27:19.4047708Z org.sonarsource.nodejs.NodeCommandException: Error when running: 'node -v'. Is Node.js available during analysis?
+2022-02-17T19:27:19.4054428Z ##[error]at org.sonarsource.nodejs.NodeCommand.start(NodeCommand.java:81)
+2022-02-17T19:27:19.4144398Z 	at org.sonarsource.nodejs.NodeCommand.start(NodeCommand.java:81)
+2022-02-17T19:27:19.4149838Z ##[error]at org.sonarsource.nodejs.NodeCommandBuilderImpl.getVersion(NodeCommandBuilderImpl.java:181)
+2022-02-17T19:27:19.4158546Z 	at org.sonarsource.nodejs.NodeCommandBuilderImpl.getVersion(NodeCommandBuilderImpl.java:181)
+2022-02-17T19:27:19.4164702Z ##[error]at org.sonarsource.nodejs.NodeCommandBuilderImpl.checkNodeCompatibility(NodeCommandBuilderImpl.java:159)
+2022-02-17T19:27:19.4184082Z 	at org.sonarsource.nodejs.NodeCommandBuilderImpl.checkNodeCompatibility(NodeCommandBuilderImpl.java:159)
+2022-02-17T19:27:19.4192429Z ##[error]at org.sonarsource.nodejs.NodeCommandBuilderImpl.build(NodeCommandBuilderImpl.java:134)
+2022-02-17T19:27:19.4198654Z 	at org.sonarsource.nodejs.NodeCommandBuilderImpl.build(NodeCommandBuilderImpl.java:134)
+2022-02-17T19:27:19.4209187Z ##[error]at org.sonar.css.plugin.server.CssAnalyzerBridgeServer.initNodeCommand(CssAnalyzerBridgeServer.java:157)
+	at org.sonar.css.plugin.server.CssAnalyzerBridgeServer.startServer(CssAnalyzerBridgeServer.java:107)
+	at org.sonar.css.plugin.server.CssAnalyzerBridgeServer.startServerLazily(CssAnalyzerBridgeServer.java:177)
+	at org.sonar.css.plugin.CssRuleSensor.execute(CssRuleSensor.java:99)
+2022-02-17T19:27:19.4225820Z 	at org.sonar.css.plugin.server.CssAnalyzerBridgeServer.initNodeCommand(CssAnalyzerBridgeServer.java:157)
+2022-02-17T19:27:19.4228723Z 	at org.sonar.css.plugin.server.CssAnalyzerBridgeServer.startServer(CssAnalyzerBridgeServer.java:107)
+2022-02-17T19:27:19.4231997Z 	at org.sonar.css.plugin.server.CssAnalyzerBridgeServer.startServerLazily(CssAnalyzerBridgeServer.java:177)
+2022-02-17T19:27:19.4236354Z 	at org.sonar.css.plugin.CssRuleSensor.execute(CssRuleSensor.java:99)
+2022-02-17T19:27:19.4333636Z ##[error]at org.sonar.scanner.sensor.AbstractSensorWrapper.analyse(AbstractSensorWrapper.java:48)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:85)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.lambda$execute$1(ModuleSensorsExecutor.java:59)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.withModuleStrategy(ModuleSensorsExecutor.java:77)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:59)
+	at org.sonar.scanner.scan.ModuleScanContainer.doAfterStart(ModuleScanContainer.java:82)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+	at org.sonar.scanner.scan.ProjectScanContainer.scan(ProjectScanContainer.java:392)
+	at org.sonar.scanner.scan.ProjectScanContainer.scanRecursively(ProjectScanContainer.java:388)
+	at org.sonar.scanner.scan.ProjectScanContainer.scanRecursively(ProjectScanContainer.java:385)
+	at org.sonar.scanner.scan.ProjectScanContainer.doAfterStart(ProjectScanContainer.java:357)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+	at org.sonar.scanner.bootstrap.GlobalContainer.doAfterStart(GlobalContainer.java:150)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+	at org.sonar.batch.bootstrapper.Batch.doExecute(Batch.java:72)
+	at org.sonar.batch.bootstrapper.Batch.execute(Batch.java:66)
+	at org.sonarsource.scanner.api.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-02-17T19:27:19.4363238Z 	at org.sonar.scanner.sensor.AbstractSensorWrapper.analyse(AbstractSensorWrapper.java:48)
+2022-02-17T19:27:19.4365986Z 	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:85)
+2022-02-17T19:27:19.4368673Z 	at org.sonar.scanner.sensor.ModuleSensorsExecutor.lambda$execute$1(ModuleSensorsExecutor.java:59)
+2022-02-17T19:27:19.4372353Z 	at org.sonar.scanner.sensor.ModuleSensorsExecutor.withModuleStrategy(ModuleSensorsExecutor.java:77)
+2022-02-17T19:27:19.4375114Z 	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:59)
+2022-02-17T19:27:19.4377758Z 	at org.sonar.scanner.scan.ModuleScanContainer.doAfterStart(ModuleScanContainer.java:82)
+2022-02-17T19:27:19.4408760Z 	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+2022-02-17T19:27:19.4411790Z 	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+2022-02-17T19:27:19.4445145Z 	at org.sonar.scanner.scan.ProjectScanContainer.scan(ProjectScanContainer.java:392)
+2022-02-17T19:27:19.4448624Z 	at org.sonar.scanner.scan.ProjectScanContainer.scanRecursively(ProjectScanContainer.java:388)
+2022-02-17T19:27:19.4451265Z 	at org.sonar.scanner.scan.ProjectScanContainer.scanRecursively(ProjectScanContainer.java:385)
+2022-02-17T19:27:19.4453504Z 	at org.sonar.scanner.scan.ProjectScanContainer.doAfterStart(ProjectScanContainer.java:357)
+2022-02-17T19:27:19.4455984Z 	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+2022-02-17T19:27:19.4458348Z 	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+2022-02-17T19:27:19.4468016Z 	at org.sonar.scanner.bootstrap.GlobalContainer.doAfterStart(GlobalContainer.java:150)
+2022-02-17T19:27:19.4476988Z 	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+2022-02-17T19:27:19.4479327Z 	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+2022-02-17T19:27:19.4481823Z 	at org.sonar.batch.bootstrapper.Batch.doExecute(Batch.java:72)
+2022-02-17T19:27:19.4483016Z 	at org.sonar.batch.bootstrapper.Batch.execute(Batch.java:66)
+2022-02-17T19:27:19.4484356Z 	at org.sonarsource.scanner.api.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:46)
+2022-02-17T19:27:19.4485777Z 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2022-02-17T19:27:19.4490900Z 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2022-02-17T19:27:19.4493944Z 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2022-02-17T19:27:19.4498773Z 	at java.lang.reflect.Method.invoke(Method.java:498)
+2022-02-17T19:27:19.4530029Z ##[error]at org.sonarsource.scanner.api.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:60)
+	at com.sun.proxy.$Proxy0.execute(Unknown Source)
+	at org.sonarsource.scanner.api.EmbeddedScanner.doExecute(EmbeddedScanner.java:189)
+	at org.sonarsource.scanner.api.EmbeddedScanner.execute(EmbeddedScanner.java:138)
+	at org.sonarsource.scanner.cli.Main.execute(Main.java:112)
+	at org.sonarsource.scanner.cli.Main.execute(Main.java:75)
+	at org.sonarsource.scanner.cli.Main.main(Main.java:61)
+Caused by: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.sonarsource.nodejs.NodeCommand$ProcessWrapperImpl.start(NodeCommand.java:162)
+	at org.sonarsource.nodejs.NodeCommand.start(NodeCommand.java:77)
+	... 38 common frames omitted
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 40 common frames omitted
+2022-02-17T19:27:19.4547089Z 	at org.sonarsource.scanner.api.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:60)
+2022-02-17T19:27:19.4549482Z 	at com.sun.proxy.$Proxy0.execute(Unknown Source)
+2022-02-17T19:27:19.4551997Z 	at org.sonarsource.scanner.api.EmbeddedScanner.doExecute(EmbeddedScanner.java:189)
+2022-02-17T19:27:19.4554401Z 	at org.sonarsource.scanner.api.EmbeddedScanner.execute(EmbeddedScanner.java:138)
+2022-02-17T19:27:19.4556731Z 	at org.sonarsource.scanner.cli.Main.execute(Main.java:112)
+2022-02-17T19:27:19.4566094Z 	at org.sonarsource.scanner.cli.Main.execute(Main.java:75)
+2022-02-17T19:27:19.4568139Z 	at org.sonarsource.scanner.cli.Main.main(Main.java:61)
+2022-02-17T19:27:19.4570223Z Caused by: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+2022-02-17T19:27:19.4572618Z 	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+2022-02-17T19:27:19.4594515Z 	at org.sonarsource.nodejs.NodeCommand$ProcessWrapperImpl.start(NodeCommand.java:162)
+2022-02-17T19:27:19.4596551Z 	at org.sonarsource.nodejs.NodeCommand.start(NodeCommand.java:77)
+2022-02-17T19:27:19.4597555Z 	... 38 common frames omitted
+2022-02-17T19:27:19.4598471Z Caused by: java.io.IOException: error=2, No such file or directory
+2022-02-17T19:27:19.4599505Z 	at java.lang.UNIXProcess.forkAndExec(Native Method)
+2022-02-17T19:27:19.4600532Z 	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+2022-02-17T19:27:19.4602275Z 	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+2022-02-17T19:27:19.4603498Z 	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+2022-02-17T19:27:19.4604420Z 	... 40 common frames omitted
+2022-02-17T19:27:19.4604780Z 
+2022-02-17T19:27:19.4813913Z INFO: Sensor CSS Rules [cssfamily] (done) | time=3923ms
+2022-02-17T19:27:19.4824244Z INFO: Sensor JaCoCo XML Report Importer [jacoco]
+2022-02-17T19:27:19.4948852Z INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+2022-02-17T19:27:19.5000361Z INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+2022-02-17T19:27:19.5003370Z INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=17ms
+2022-02-17T19:27:19.5004369Z INFO: Sensor C# Project Type Information [csharp]
+2022-02-17T19:27:19.5032548Z INFO: Sensor C# Project Type Information [csharp] (done) | time=5ms
+2022-02-17T19:27:19.5123825Z INFO: Sensor C# Properties [csharp]
+2022-02-17T19:27:19.5324345Z INFO: Sensor C# Properties [csharp] (done) | time=28ms
+2022-02-17T19:27:19.5327060Z INFO: Sensor JavaXmlSensor [java]
+2022-02-17T19:27:19.5389923Z INFO: Sensor JavaXmlSensor [java] (done) | time=5ms
+2022-02-17T19:27:19.5392840Z INFO: Sensor HTML [web]
+2022-02-17T19:27:21.3734255Z INFO: Sensor HTML [web] (done) | time=1829ms
+2022-02-17T19:27:21.3736011Z INFO: Sensor VB.NET Project Type Information [vbnet]
+2022-02-17T19:27:21.3741666Z INFO: Sensor VB.NET Project Type Information [vbnet] (done) | time=4ms
+2022-02-17T19:27:21.3744081Z INFO: Sensor VB.NET Properties [vbnet]
+2022-02-17T19:27:21.3810326Z INFO: Sensor VB.NET Properties [vbnet] (done) | time=11ms
+2022-02-17T19:27:21.3972286Z INFO: ------------- Run sensors on module hello_world
+2022-02-17T19:27:21.6719244Z INFO: Sensor CSS Rules [cssfamily]
+2022-02-17T19:27:21.6736760Z INFO: No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+2022-02-17T19:27:21.6744526Z INFO: Sensor CSS Rules [cssfamily] (done) | time=1ms
+2022-02-17T19:27:21.6753814Z INFO: Sensor JaCoCo XML Report Importer [jacoco]
+2022-02-17T19:27:21.6776257Z INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+2022-02-17T19:27:21.6800509Z INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+2022-02-17T19:27:21.6810416Z INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=1ms
+2022-02-17T19:27:21.6816220Z INFO: Sensor C# Project Type Information [csharp]
+2022-02-17T19:27:21.6817975Z INFO: Sensor C# Project Type Information [csharp] (done) | time=1ms
+2022-02-17T19:27:21.6821021Z INFO: Sensor C# Properties [csharp]
+2022-02-17T19:27:21.6822830Z INFO: Sensor C# Properties [csharp] (done) | time=1ms
+2022-02-17T19:27:21.6824664Z INFO: Sensor JavaXmlSensor [java]
+2022-02-17T19:27:21.6826454Z INFO: Sensor JavaXmlSensor [java] (done) | time=0ms
+2022-02-17T19:27:21.6828757Z INFO: Sensor VB.NET Project Type Information [vbnet]
+2022-02-17T19:27:21.6831176Z INFO: Sensor VB.NET Project Type Information [vbnet] (done) | time=0ms
+2022-02-17T19:27:21.6835585Z INFO: Sensor VB.NET Properties [vbnet]
+2022-02-17T19:27:21.6837474Z INFO: Sensor VB.NET Properties [vbnet] (done) | time=1ms
+2022-02-17T19:27:21.6841449Z INFO: ------------- Run sensors on project
+2022-02-17T19:27:21.8185251Z INFO: Sensor C# [csharp]
+2022-02-17T19:27:21.8888047Z INFO: Importing results from 5 proto files in '/home/yugularx/Documents/BHD_Test_Tecnico/manualagent/_work/2/.sonarqube/out/0/output-cs'
+2022-02-17T19:27:22.1219709Z INFO: Importing 1 Roslyn report
+2022-02-17T19:27:22.2148809Z INFO: Found 1 MSBuild C# project: 1 MAIN project.
+2022-02-17T19:27:22.2151664Z INFO: Sensor C# [csharp] (done) | time=397ms
+2022-02-17T19:27:22.2153499Z INFO: Sensor Zero Coverage Sensor
+2022-02-17T19:27:22.2569809Z INFO: Sensor Zero Coverage Sensor (done) | time=42ms
+2022-02-17T19:27:22.2668032Z INFO: SCM Publisher SCM provider for this project is: git
+2022-02-17T19:27:22.2712830Z INFO: SCM Publisher 3 source files to be analyzed
+2022-02-17T19:27:22.8525747Z INFO: SCM Publisher 3/3 source files have been analyzed (done) | time=567ms
+2022-02-17T19:27:22.8636732Z INFO: CPD Executor Calculating CPD for 2 files
+2022-02-17T19:27:22.9046093Z INFO: CPD Executor CPD calculation finished (done) | time=39ms
+2022-02-17T19:27:23.2499953Z INFO: Analysis report generated in 340ms, dir size=105 KB
+2022-02-17T19:27:23.3218995Z INFO: Analysis report compressed in 72ms, zip size=19 KB
+2022-02-17T19:27:25.6015291Z INFO: Analysis report uploaded in 2275ms
+2022-02-17T19:27:25.6303714Z INFO: ANALYSIS SUCCESSFUL, you can browse http://127.0.0.1:9000/dashboard?id=hello_world
+2022-02-17T19:27:25.6331986Z INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+2022-02-17T19:27:25.6334364Z INFO: More about the report processing at http://127.0.0.1:9000/api/ce/task?id=AX8JJ09K0uwM6LUStCxL
+2022-02-17T19:27:25.6541658Z INFO: Analysis total time: 30.781 s
+2022-02-17T19:27:25.6618398Z INFO: ------------------------------------------------------------------------
+2022-02-17T19:27:25.6620004Z INFO: EXECUTION SUCCESS
+2022-02-17T19:27:25.6622554Z INFO: ------------------------------------------------------------------------
+2022-02-17T19:27:25.6624358Z INFO: Total time: 41.427s
+2022-02-17T19:27:26.0845670Z INFO: Final Memory: 20M/359M
+2022-02-17T19:27:26.0852554Z INFO: ------------------------------------------------------------------------
+2022-02-17T19:27:26.1915464Z The SonarScanner CLI has finished
+2022-02-17T19:27:26.1924019Z 15:27:26.191  Post-processing succeeded.
+2022-02-17T19:27:26.2426647Z ##[section]Finishing: SonarQubeAnalyze

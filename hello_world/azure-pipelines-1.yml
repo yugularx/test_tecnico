@@ -1,0 +1,64 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'sonarqubelocal'
+    scannerMode: 'MSBuild'
+    projectKey: 'hello_world'
+    projectName: 'hello_world'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.scm.disabled=true
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+
+- task: SonarQubeAnalyze@5
+
+- task: SonarQubePublish@5
+  inputs:
+    pollingTimeoutSec: '300'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    zipAfterPublish: false
+
+- task: Docker@2
+  displayName: Building
+  inputs:
+    containerRegistry: 'dockerhub'
+    repository: yugularx/hello_world_bhd
+    Dockerfile: Dockerfile
+    command: "build"
+    tags: |
+      $(Build.BuildId)
+      latest
+- task: Docker@2
+  displayName: Building
+  inputs:
+    containerRegistry: 'dockerhub'
+    repository: yugularx/hello_world_bhd
+    Dockerfile: Dockerfile
+    command: "push"
+    tags: |
+      $(Build.BuildId)
+      latest

@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  hello_world:
+    image: yugularx/hello_world_bhd:latest
+    ports:
+      - "443:443"
+      - "80:80"

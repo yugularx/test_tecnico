@@ -1,0 +1,44 @@
+version: '3.7'
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    environment:
+      - "TZ=America/Santo_Domingo"
+    ports:
+      - "8080:8080"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    volumes:
+      - $PWD/jenkins_home:/var/jenkins_home
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - bhdnet
+  sonarqube:
+    image: sonarqube:8.9-community
+    environment:
+      - "TZ=America/Santo_Domingo"    
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_logs:/opt/sonarqube/logs
+    ports:
+      - "9000:9000"
+    networks:
+      - bhdnet
+        #  agentpool: 
+        #    image: dockeragent:latest
+        #    environment:
+        #      - "TZ=America/Santo_Domingo"
+        #      - "AZP_URL=https://dev.azure.com/fdomin24"
+        #      - "AZP_AGENT_NAME=docker-linux-agent"
+        #      - "AZP_POOL=Default"
+        #    networks:
+        #      - bhdnet
+          
+volumes:
+  sonarqube_data:
+  sonarqube_extensions:
+  sonarqube_logs:
+networks:
+  bhdnet:
